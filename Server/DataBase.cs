@@ -74,7 +74,7 @@ namespace Server
                 return "Dükkan Silinirken Hatayla Karşılaşıldı";
             }
         }
-        public string DukkanGuncelle(int id,Dukkan dukkan)
+        public string DukkanGuncelle(int id, Dukkan dukkan)
         {
             string query = @"EXEC DukkanGuncelle" +
                 @"'" + dukkan.DukkanIsim + "'" +    //@dukkanIsim nvarchar(50)
@@ -120,7 +120,6 @@ namespace Server
                     }
                 }
             }
-            return false;
         }
     }
 }

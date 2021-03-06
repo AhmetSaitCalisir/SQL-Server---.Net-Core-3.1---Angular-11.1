@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lg+x1yV86XjjGLHLSC8KT/9704H/P+2gghQ2TtlI7YafhYWdWG9cP0Dxpf+A6o+62FZbs8AMO4E96ICUQxYHxw==",
+  "dgSpecHash": "XTMwj6Xl8/REHZuS296ssmSSi0SfoHet053c8SsYAPYFL76GNwCSxCFY9plvgMhjOi81fD8bpYoZ3xSjZVsBzA==",
   "success": true,
-  "projectFilePath": "D:\\Yazılım\\Web\\Software ARGE\\Server\\Server.csproj",
+  "projectFilePath": "D:\\Yazılım\\Web\\SQL-Server---.Net-Core-3.1---Angular-11.1\\Server\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.12\\microsoft.aspnetcore.authentication.jwtbearer.3.1.12.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.12\\microsoft.aspnetcore.jsonpatch.3.1.12.nupkg.sha512",

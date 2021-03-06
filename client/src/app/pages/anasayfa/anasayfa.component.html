@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-kayar-menu></app-kayar-menu>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2 class="font-weight-bold text-center text-dark" id="isortk">
+        İŞ ORTAKLARIMIZ
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let dukkan of dukkanlar">
+      <app-anasayfa-kart [dukkan]="dukkan"></app-anasayfa-kart>
+    </div>
+  </div>
+</div>

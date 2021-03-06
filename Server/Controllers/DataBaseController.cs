@@ -30,15 +30,5 @@ namespace Server.Controllers
 
             return new JsonResult(dataTable);
         }
-        [HttpGet, Route("Kartlar")]
-        public JsonResult Kart()
-        {
-            string query = @"SELECT * FROM dbo.View_Kart";
-            DataTable dataTable = dataBase.TaploGetir(query);
-
-            return new JsonResult(dataTable);
-        }
-
-        
     }
 }

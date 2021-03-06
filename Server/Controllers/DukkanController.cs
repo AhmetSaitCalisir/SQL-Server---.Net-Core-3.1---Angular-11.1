@@ -23,6 +23,15 @@ namespace Server.Controllers
             dataBase = new DataBase(configuration);
         }
 
+        [HttpGet]
+        public JsonResult Kartlar()
+        {
+            string query = @"SELECT * FROM dbo.View_Kart";
+            DataTable dataTable = dataBase.TaploGetir(query);
+
+            return new JsonResult(dataTable);
+        }
+
 
 
         [HttpGet("{id}")]

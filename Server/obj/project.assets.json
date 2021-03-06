@@ -981,11 +981,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Yazılım\\Web\\Software ARGE\\Server\\Server.csproj",
+      "projectUniqueName": "D:\\Yazılım\\Web\\SQL-Server---.Net-Core-3.1---Angular-11.1\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "D:\\Yazılım\\Web\\Software ARGE\\Server\\Server.csproj",
+      "projectPath": "D:\\Yazılım\\Web\\SQL-Server---.Net-Core-3.1---Angular-11.1\\Server\\Server.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "D:\\Yazılım\\Web\\Software ARGE\\Server\\obj\\",
+      "outputPath": "D:\\Yazılım\\Web\\SQL-Server---.Net-Core-3.1---Angular-11.1\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
