@@ -10,9 +10,10 @@ import { AnasayfaComponent } from './pages/anasayfa/anasayfa.component';
 import { AnasayfaKartComponent } from './components/anasayfa-kart/anasayfa-kart.component';
 import { KayarMenuComponent } from './components/kayar-menu/kayar-menu.component';
 import { AltMenuComponent } from './components/alt-menu/alt-menu.component';
+import { GirisComponent } from './pages/giris/giris.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, AnasayfaComponent, AnasayfaKartComponent, KayarMenuComponent, AltMenuComponent],
+  declarations: [AppComponent, NavbarComponent, AnasayfaComponent, AnasayfaKartComponent, KayarMenuComponent, AltMenuComponent, GirisComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
