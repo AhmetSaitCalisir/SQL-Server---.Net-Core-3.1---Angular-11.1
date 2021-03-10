@@ -14,6 +14,7 @@ export class AnasayfaComponent implements OnInit {
   ngOnInit(): void {
     this.databaseService.kartAnasayfa().subscribe((res) => {
       this.dukkanlar = res;
+      console.log(res);
     });
   }
 }

@@ -1,0 +1,171 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col-4">
+          <div
+            class="list-group bg-dark text-light"
+            id="list-tab"
+            role="tablist"
+          >
+            <a
+              class="list-group-item list-group-item-action active bg-dark text-light"
+              id="list-home-list"
+              data-toggle="list"
+              href="#list-home"
+              role="tab"
+              aria-controls="home"
+              >Dükkan Bilgileri</a
+            >
+            <a
+              class="list-group-item list-group-item-action bg-dark text-light"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#list-profile"
+              role="tab"
+              aria-controls="profile"
+              >Dükkan Adres Bilgileri</a
+            >
+            <a
+              class="list-group-item list-group-item-action bg-dark text-light"
+              id="list-messages-list"
+              data-toggle="list"
+              href="#list-messages"
+              role="tab"
+              aria-controls="messages"
+              >Sahip Bilgileri</a
+            >
+            <a
+              class="list-group-item list-group-item-action bg-dark text-light"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#list-settings"
+              role="tab"
+              aria-controls="settings"
+              >İşlemler</a
+            >
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="list-home"
+              role="tabpanel"
+              aria-labelledby="list-home-list"
+            >
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="font-weight-bold">İsim:</span>
+                  {{ dukkan.DukkanIsim }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Telefon:</span>
+                  {{ dukkan.DukkanTel }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Mail:</span>
+                  {{ dukkan.DukkanMail }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Yıldız:</span>
+                  {{ dukkan.Yildiz }}
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-profile"
+              role="tabpanel"
+              aria-labelledby="list-profile-list"
+            >
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Bölge:</span>
+                  {{ dukkan.Bolge }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Şehir:</span>
+                  {{ dukkan.Sehir }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">İlçe:</span> {{ dukkan.Ilce }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Mahalle:</span>
+                  {{ dukkan.Mahalle }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Sokak:</span>
+                  {{ dukkan.Sokak }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">No:</span> {{ dukkan.No }}
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-messages"
+              role="tabpanel"
+              aria-labelledby="list-messages-list"
+            >
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="font-weight-bold">İsim:</span>
+                  {{ dukkan.MusteriIsim }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Soyisim:</span>
+                  {{ dukkan.Soyisim }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Tel:</span>
+                  {{ dukkan.MusteriTel }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Mail:</span>
+                  {{ dukkan.MusteriMail }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">Sokak:</span>
+                  {{ dukkan.Sokak }}
+                </li>
+                <li class="list-group-item">
+                  <span class="font-weight-bold">No:</span> {{ dukkan.No }}
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-settings"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <button
+                      class="btn btn-outline-warning btn-block"
+                      (click)="Guncelle()"
+                    >
+                      Dükkan Güncelle
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="btn btn-outline-danger btn-block"
+                      (click)="Sil()"
+                    >
+                      Dükkan Sil
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

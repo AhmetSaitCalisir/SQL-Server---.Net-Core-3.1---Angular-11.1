@@ -1,0 +1,143 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form (submit)="Guncelle()">
+        <div class="form-group">
+          <label for="dukkan.DukkanIsim">Dükkan İsmi</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dukkan.DukkanIsim"
+            placeholder="Dükkan İsmi"
+            [(ngModel)]="dukkan.DukkanIsim"
+            name="dukkan.DukkanIsim"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Dükkan Sahibi</label>
+          <select
+            class="form-control"
+            id="exampleFormControlSelect1"
+            [(ngModel)]="dukkan.DukkanSahipID"
+            name="dukkan.DukkanSahipID"
+          >
+            <option
+              *ngFor="let musteri of musteriler"
+              value="{{ musteri.MusteriID }}"
+            >
+              {{ musteri.MusteriIsim }} {{ musteri.Soyisim }}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dukkan.DukkanTel">Dükkan Tel</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="dukkan.DukkanTel"
+            placeholder="05xxxxxxxxx"
+            [(ngModel)]="dukkan.DukkanTel"
+            name="dukkan.DukkanTel"
+            maxlength="11"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.DukkanMail">Dükkan Mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="dukkan.DukkanMail"
+            placeholder="deneme@gmail.com"
+            [(ngModel)]="dukkan.DukkanMail"
+            name="dukkan.DukkanMail"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.DukkanYildiz">Dükkan Yıldız</label>
+          <input
+            type="number"
+            class="form-control"
+            id="dukkan.DukkanYildiz"
+            placeholder="1"
+            [(ngModel)]="dukkan.DukkanYildiz"
+            name="dukkan.DukkanYildiz"
+            max="3"
+            min="1"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.AdresBolge">Dükkan Bölge</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dukkan.AdresBolge"
+            placeholder="Marmara"
+            [(ngModel)]="dukkan.AdresBolge"
+            name="dukkan.AdresBolge"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.AdresSehir">Dükkan Şehir</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dukkan.AdresSehir"
+            placeholder="Bursa"
+            [(ngModel)]="dukkan.AdresSehir"
+            name="dukkan.AdresSehir"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.AdresIlce">Dükkan İlçe</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dukkan.AdresIlce"
+            placeholder="Yıldırım"
+            [(ngModel)]="dukkan.AdresIlce"
+            name="dukkan.AdresIlce"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.AdresMahalle">Dükkan Mahalle</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dukkan.AdresMahalle"
+            placeholder="Vatan"
+            [(ngModel)]="dukkan.AdresMahalle"
+            name="dukkan.AdresMahalle"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.AdresSokak">Dükkan Sokak</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dukkan.AdresSokak"
+            placeholder="1. Selim Sk"
+            [(ngModel)]="dukkan.AdresSokak"
+            name="dukkan.AdresSokak"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dukkan.AdresNo">Dükkan Kapı No</label>
+          <input
+            type="number"
+            class="form-control"
+            id="dukkan.AdresNo"
+            placeholder="10"
+            [(ngModel)]="dukkan.AdresNo"
+            name="dukkan.AdresNo"
+            min="1"
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-outline-warning btn-block">
+            Dükkanı Güncelle
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

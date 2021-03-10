@@ -29,28 +29,36 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                *ngIf="girisYapilmis()"
               >
-                Dropdown
+                Dükkanlar
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#" routerLink="dukkanlar"
+                  >Dükkanlar</a
+                >
+                <a class="dropdown-item" href="#" routerLink="dukkanekle"
+                  >Dükkan Ekle</a
+                >
               </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
             </li>
           </ul>
           <ul class="navbar-nav my-2 my-lg-0">
-            <a class="nav-link mr-sm-2" href="#" routerLink="giris">Giriş</a>
+            <a
+              class="nav-link mr-sm-2"
+              href="#"
+              *ngIf="!girisYapilmis()"
+              routerLink="giris"
+              >Giriş</a
+            >
+            <a
+              class="nav-link mr-sm-2"
+              href="#"
+              *ngIf="girisYapilmis()"
+              routerLink="/"
+              (click)="cikisYap()"
+              >Çıkış</a
+            >
           </ul>
         </div>
       </nav>

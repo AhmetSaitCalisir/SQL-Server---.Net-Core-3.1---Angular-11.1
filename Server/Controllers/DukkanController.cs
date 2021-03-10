@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Server.Models;
 using System;
@@ -13,6 +14,7 @@ namespace Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class DukkanController : ControllerBase
     {
 
@@ -39,7 +41,6 @@ namespace Server.Controllers
         {
             string query = @"EXEC Dukkan " + id;
             DataTable dataTable = dataBase.TaploGetir(query);
-
             return new JsonResult(dataTable);
         }
 
